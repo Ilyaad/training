@@ -1,0 +1,109 @@
+<extension>
+    <modules>
+        <module>
+            <id>Add Document Libarary Actions (Send-as-Email, Call WS, Show Msg, Go to Google)</id>
+            <version>1.0</version>
+            <auto-deploy>true</auto-deploy>
+            <configurations>
+			
+				<config evaluator="string-compare" condition="DocumentLibrary">
+                    <indicators>
+                        <indicator id="alfresco.tutorials.indicator.isEmailed"
+                                   icon="email-16.png"
+                                   index="100"
+                                   label="alfresco.tutorials.indicator.isEmailed.label">
+                            <evaluator>alfresco.tutorials.evaluator.isEmailed</evaluator>
+                        </indicator>
+                    </indicators>
+                </config>
+
+			
+                <config evaluator="string-compare" condition="DocLibActions">
+				
+                    <actions>
+						 <action id="alfresco.tutorials.doclib.action.goToGoogle"
+                                icon="google"
+                                type="link"
+                                label="alfresco.tutorials.doclib.action.goToGoogle.label">
+                            <param name="href">http://www.google.com</param>
+                            <param name="target">_blank</param>
+                        </action>
+                        <action id="alfresco.tutorials.doclib.action.sendAsEmail"
+                                icon="email"
+                                type="javascript"
+                                label="alfresco.tutorials.doclib.action.sendAsEmail.label">
+                            <param name="function">onActionFormDialog</param>
+                            <param name="itemKind">action</param>
+                            <param name="itemId">send-as-email</param> <!-- Repository action id = Spring Bean id -->
+                            <param name="mode">create</param>
+                            <param name="destination">{node.nodeRef}</param>
+                            <param name="successMessage">alfresco.tutorials.doclib.action.sendAsEmail.msg.success</param>
+                            <param name="failureMessage">alfresco.tutorials.doclib.action.sendAsEmail.msg.failure</param>
+                            <evaluator negate="true">alfresco.tutorials.evaluator.isEmailed</evaluator>
+                        </action>
+						<action id="alfresco.tutorials.doclib.action.callWebScript"
+                                icon="callws"
+                                type="javascript"
+                                label="alfresco.tutorials.doclib.action.callWebScript.label">
+                            <param name="function">onActionCallWebScript</param>
+                            <param name="successMessage">alfresco.tutorials.doclib.action.callWebScript.msg.success</param>
+                            <param name="failureMessage">alfresco.tutorials.doclib.action.callWebScript.msg.failure</param>
+                        </action>
+						<action id="alfresco.tutorials.doclib.action.showCustomMessage"
+                                icon="showmsg"
+                                type="javascript"
+                                label="alfresco.tutorials.doclib.action.showCustomMessage.label">
+                            <param name="function">onShowCustomMessage</param>
+                        </action>
+                    </actions>
+					<actionGroups>
+                        <actionGroup id="document-browse">
+                            <action index="400" id="alfresco.tutorials.doclib.action.sendAsEmail" />
+							<action index="401" id="alfresco.tutorials.doclib.action.callWebScript" />
+							<action index="402" id="alfresco.tutorials.doclib.action.showCustomMessage" />
+							<action index="403" id="alfresco.tutorials.doclib.action.goToGoogle" />
+                        </actionGroup>
+                        <actionGroup id="document-details">
+                            <action index="400" id="alfresco.tutorials.doclib.action.sendAsEmail" />
+							<action index="401" id="alfresco.tutorials.doclib.action.callWebScript" />
+							<action index="402" id="alfresco.tutorials.doclib.action.showCustomMessage" />
+							<action index="403" id="alfresco.tutorials.doclib.action.goToGoogle" />
+                        </actionGroup>
+						<actionGroup id="folder-browse">
+                            <action index="403" id="alfresco.tutorials.doclib.action.goToGoogle" />
+                        </actionGroup>
+                    </actionGroups>
+					
+                </config>
+				
+				<config evaluator="string-compare"
+                        condition="send-as-email"> <!-- ID for the Repository Action that this form is associated with -->
+                    <forms>
+                        <form>
+                            <field-visibility>
+                                <show id="to"/>
+                                <show id="subject"/>
+                                <show id="body_text"/>
+                            </field-visibility>
+                            <appearance>
+                                <field id="to" label-id="alfresco.tutorials.doclib.action.sendAsEmail.form.field.to"/>
+                                <field id="subject" label-id="alfresco.tutorials.doclib.action.sendAsEmail.form.field.subject"/>
+                                <field id="body_text" label-id="alfresco.tutorials.doclib.action.sendAsEmail.form.field.body_text">
+                                    <control template="/org/alfresco/components/form/controls/textarea.ftl" />
+                                </field>
+                            </appearance>
+                        </form>
+                    </forms>
+                </config>
+				
+				<config evaluator="string-compare" condition="DocLibCustom">
+				  <dependencies>
+						<js src="/modules/documentlibrary/custom-doclib-actions.js" />
+					</dependencies>	
+			    </config>
+
+				
+            </configurations>
+        </module>
+    </modules>
+</extension> 

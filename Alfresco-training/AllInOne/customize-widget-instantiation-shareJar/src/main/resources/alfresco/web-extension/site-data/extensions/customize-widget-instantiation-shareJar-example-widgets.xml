@@ -1,0 +1,16 @@
+<extension>
+  <modules>
+	
+	<module>
+		<id>Custom DocumentList Widget</id>
+		<description>Instantiate a custom DocumentList widget</description>
+		<customizations>
+			<customization>
+				<targetPackageRoot>org.alfresco.components.documentlibrary</targetPackageRoot>
+				<sourcePackageRoot>org.alfresco.tutorials.customization</sourcePackageRoot>
+			</customization>
+		</customizations>
+	</module> 
+	
+  </modules>
+</extension>
