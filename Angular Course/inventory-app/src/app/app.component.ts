@@ -7,15 +7,35 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  product: Product;
+  products : Product[];
+
   constructor(){
-    let newProduct = new Product(
-      'NiceChat',
-      'A Nice black hat',
-      '/resources/images/products/black-hat.jpg',
-      ['Men', 'Accessories', 'Hats'],
-      29.99
-    );
-    this.product = newProduct;
+
+    this.products = [
+      
+      new Product('MYSHOES',
+                  'Black running Shoes',
+                  '/assets/images/products/black-shoes.jpg',
+                  ['Men', 'Shoes', 'Running Shoes'],
+                  109.99),
+      
+      new Product('NEATOJACKET',
+                  'Blue Jacket',
+                  '/assets/images/products/blue-jacket.jpg',
+                  ['Women', 'Apparel', 'Jackets & Vests'],
+                  238.99),
+      
+      new Product('NICEHAT',
+                  'A Nice Black hat',
+                  '/assets/images/products/black-hat.jpg',
+                  ['Men', 'Accessories', 'Hats'],
+                  29.99)                                   
+    ];
+   
   }
+
+  productWasSelected(product: Product): void{
+    console.log('Product clicked: ', product);
+  }
+
 }
