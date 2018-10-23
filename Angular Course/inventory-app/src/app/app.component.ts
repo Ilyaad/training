@@ -7,6 +7,7 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   products : Product[];
 
   constructor(){
