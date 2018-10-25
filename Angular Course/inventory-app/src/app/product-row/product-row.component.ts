@@ -1,7 +1,8 @@
 import {
   Component,
   Input,
-  HostBinding
+  HostBinding,
+  HostListener
 } from '@angular/core';
 import { Product } from '../product.model';
 
@@ -14,5 +15,5 @@ import { Product } from '../product.model';
 })
 export class ProductRowComponent {
   @Input() product: Product;
-  //@HostBinding('attr.class') cssClass = 'item';
+  @HostBinding('attr.class') cssClass = 'item';
 }
