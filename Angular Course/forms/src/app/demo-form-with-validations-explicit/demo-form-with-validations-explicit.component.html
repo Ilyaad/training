@@ -12,6 +12,7 @@
              id="skuInput"
              placeholder="SKU"
              [formControl]="sku">
+             
        <div *ngIf="!sku.valid"
          class="ui error message">SKU is invalid</div>
        <div *ngIf="sku.hasError('required')"

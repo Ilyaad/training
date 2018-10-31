@@ -14,7 +14,8 @@ export class DemoFormSkuWithBuilderComponent implements OnInit {
 
   constructor(fb: FormBuilder) {
     this.myForm = fb.group({
-      'sku': ['ABC123']
+      'sku': ['ABC123'],
+      'sku2': ['test']
     });
   }
 
