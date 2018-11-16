@@ -26,7 +26,7 @@ export class UserDemoInjectorComponent {
     // when we sign in, set the user
     // this mimics filling out a login form
     this.userService.setUser({
-      name: 'Nate Murray'
+      name: 'Inject Man'
     });
 
     // now **read** the user name from the service

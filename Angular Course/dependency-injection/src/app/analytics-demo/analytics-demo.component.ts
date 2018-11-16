@@ -9,10 +9,10 @@ import { AnalyticsService } from '../services/analytics.service';
 export class AnalyticsDemoComponent implements OnInit {
 
   constructor(private analytics: AnalyticsService) {
-    this.analytics.record({
+    /*this.analytics.record({
       eventName: 'componentCreated',
       scope: 'AnalyticsDemoComponent'
-    });
+    });*/
   }
 
   ngOnInit() {
