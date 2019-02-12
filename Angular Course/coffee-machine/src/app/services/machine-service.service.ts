@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IMachineOperation } from '../model/imachine-operation';
+import { IMachineOperation } from '../machine/imachine-operation';
 import { ICoffee } from '../model/icoffee';
 
 export class MachineService {

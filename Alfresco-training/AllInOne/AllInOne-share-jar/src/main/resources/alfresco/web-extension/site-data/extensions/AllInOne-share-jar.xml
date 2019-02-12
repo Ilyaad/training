@@ -1,0 +1,15 @@
+<extension>
+  <modules>
+    <module>
+      <id>AllInOne-share-jar - Custom Share Header Menu</id>
+      <version>1.0</version>
+	  <auto-deploy>true</auto-deploy>
+      <customizations>
+        <customization>
+          <targetPackageRoot>org.alfresco.share.header</targetPackageRoot>
+          <sourcePackageRoot>org.alfresco.share.header.custom</sourcePackageRoot>
+        </customization>
+      </customizations>
+    </module>
+  </modules>
+</extension>

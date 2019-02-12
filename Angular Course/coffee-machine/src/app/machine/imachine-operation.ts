@@ -1,4 +1,4 @@
-import { ICoffee } from "./icoffee";
+import { ICoffee } from "../model/icoffee";
 
 export interface IMachineOperation {
 

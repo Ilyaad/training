@@ -301,8 +301,8 @@
                     <enableApiExplorer>true</enableApiExplorer>
 
                     <!--
-                        JARs and AMPs that should be overlayed/applied to the Platform/Repository WAR
-                        (i.e. alfresco.war)
+                         ### JARs and AMPs that should be overlayed/applied to the Platform/Repository WAR
+                        (i.e. alfresco.war) ###
                     -->
                     <platformModules>
                         <!-- Share Services will be ignored if you are on Platform earlier than 5.1 -->
@@ -319,16 +319,8 @@
                             <artifactId>AllInOne-platform-jar</artifactId>
                             <version>${project.version}</version>
                         </moduleDependency>
-
-                        <!-- Bring in the integration tests -->
-                         <!--<moduleDependency>
-                            <groupId>${project.groupId}</groupId>
-                            <artifactId>integration-tests</artifactId>
-                            <version>${project.version}</version>
-                            <classifier>tests</classifier>
-                        </moduleDependency> -->
 						
-						<moduleDependency>
+						<!--<<moduleDependency>
 							<groupId>${project.groupId}</groupId>
 							<artifactId>add-action-repo</artifactId>
 							<version>${project.version}</version>
@@ -340,7 +332,7 @@
 							<artifactId>add-metadata-template-doclib-repo</artifactId>
 							<version>${project.version}</version>
 							<type>jar</type>
-						</moduleDependency>
+						</moduleDependency>-->
 						
                     </platformModules>
 
@@ -348,8 +340,8 @@
                         JARs and AMPs that should be overlayed/applied to the Share WAR (i.e. share.war)
                     -->
                     <shareModules>
-                        <!-- Bring in custom Modules -->
-                        <moduleDependency>
+                        <!-- ## Bring in custom Modules ##-->
+                        <!--<moduleDependency>
                             <groupId>${project.groupId}</groupId>
                             <artifactId>AllInOne-share-jar</artifactId>
                             <version>${project.version}</version>
@@ -375,13 +367,19 @@
 						
 						<moduleDependency>
                             <groupId>${project.groupId}</groupId>
-                            <artifactId>customize-widget-instantiation-shareJar</artifactId>
+							<artifactId>customize-widget-instantiation-shareJar</artifactId>
                             <version>${project.version}</version>
                         </moduleDependency>
 						
 						<moduleDependency>
                             <groupId>${project.groupId}</groupId>
                             <artifactId>add-page-content-share</artifactId>
+                            <version>${project.version}</version>
+                        </moduleDependency>-->
+						
+						<moduleDependency>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>Aikau-Share</artifactId>
                             <version>${project.version}</version>
                         </moduleDependency>
 						
@@ -464,22 +462,16 @@
         </pluginRepository>
     </pluginRepositories>
   <modules>
-  
     <module>AllInOne-platform-jar</module>
-    <module>AllInOne-share-jar</module>
-    <!--<module>integration-tests</module>-->
-	
+    <!--<module>AllInOne-share-jar</module>
+    <module>integration-tests</module>
 	<module>add-action-repo</module>
 	<module>add-action-doclib-share</module>
-	
 	<module>add-metadata-template-doclib-repo</module>
 	<module>add-metadata-template-doclib-share</module>
-	
 	<module>add-create-menuitem-doclib-share</module>
-	
 	<module>customize-widget-instantiation-shareJar</module>
-	
-	<module>add-page-content-share</module>
-
+	<module>add-page-content-share</module>-->
+	<module>Aikau-Share</module>
   </modules>
 </project>

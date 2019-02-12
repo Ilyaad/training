@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MachineService } from '../services/machine-service.service';
-import { IMachineOperation } from '../model/imachine-operation';
+import { IMachineOperation } from '../machine/imachine-operation';
 import { ICoffee } from '../model/icoffee';
 import { Expresso } from '../model/expresso';
 import { Latte } from '../model/latte';
@@ -32,9 +32,9 @@ import { Capuccino } from '../model/capuccino';
                 case 'Latte':
                     coffeeChosen = new Latte();
                     break;
-                /*case 'Capuccino':
+                case 'Capuccino':
                     coffeeChosen = new Capuccino();
-                    break;*/    
+                    break;    
                 default:
                     break;
             }

@@ -1,0 +1,43 @@
+2019-02-06 22:15:07,230 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [http-bio-8080-exec-13] Registered 394 Web Scripts (+0 failed), 412 URLs
+2019-02-06 22:15:07,231 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [http-bio-8080-exec-13] Registered 8 Package Description Documents (+0 failed) 
+2019-02-06 22:15:07,232 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [http-bio-8080-exec-13] Registered 0 Schema Description Documents (+0 failed) 
+2019-02-06 22:15:07,455 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] [http-bio-8080-exec-13] Initialised Surf Container Web Script Container (in 9637.628ms)
+2019-02-06 22:28:05,580 INFO  [org.alfresco.web.config.packaging.ModulePackageManager] [localhost-startStop-1] Found 6 module package(s)
+2019-02-06 22:28:05,595 INFO  [org.alfresco.web.config.packaging.ModulePackageManager] [localhost-startStop-1] Alfresco Share JAR Module, 1.0-SNAPSHOT, Sample Share JAR Module (to be included in the share.war) - part of AIO - SDK 3
+Alfresco Tutorials (Document Library) - Add a DocLib Action, 1.0-SNAPSHOT, Tutorial that demonstrates how to add a new document library action that is backed by a Repository action.
+Alfresco Tutorials (Surf Extension Modules) - Add a new Create menu item in DocLib, 1.0-SNAPSHOT, Tutorial that uses a Surf Extension Module to add a new menu item to the "Create..." drop-down menu in the Document Library (DocLib)
+Alfresco Tutorials (Document Library) - Add Metadata Template, 1.0-SNAPSHOT, Tutorial that demonstrates how to add a custom metadata template to the Document Library.
+Alfresco Tutorials (Surf Extension Modules) - Add Content to Surf Page, 1.0-SNAPSHOT, Tutorial that uses a Surf Extension Module to add content to a Surf Page
+customize-widget-instantiation-shareJar Share Jar Module - SDK 3, 1.0-SNAPSHOT, Share JAR Module (to be included in the share.war) - SDK 3
+
+2019-02-06 22:28:06,252 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] [localhost-startStop-1] Registered template processor freemarker for extension ftl
+2019-02-06 22:28:06,252 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] [localhost-startStop-1] Registered script processor javascript for extension js
+2019-02-06 22:28:06,252 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] [localhost-startStop-1] Registered template processor freemarker for extension ftl
+2019-02-06 22:28:06,252 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] [localhost-startStop-1] Registered script processor javascript for extension js
+2019-02-06 22:28:12,563 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [localhost-startStop-1] Registered 394 Web Scripts (+0 failed), 412 URLs
+2019-02-06 22:28:12,563 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [localhost-startStop-1] Registered 8 Package Description Documents (+0 failed) 
+2019-02-06 22:28:12,563 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [localhost-startStop-1] Registered 0 Schema Description Documents (+0 failed) 
+2019-02-06 22:28:12,641 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] [localhost-startStop-1] Initialised Surf Container Web Script Container (in 6366.723ms)
+2019-02-06 22:28:12,656 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] [localhost-startStop-1] Registered template processor freemarker for extension ftl
+2019-02-06 22:28:12,656 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] [localhost-startStop-1] Registered script processor javascript for extension js
+2019-02-06 22:30:27,860 INFO  [org.alfresco.web.site.EditionInterceptor] [http-bio-8080-exec-10] Successfully retrieved license information from Alfresco.
+2019-02-06 22:31:40,989 ERROR [org.alfresco.web.site] [http-bio-8080-exec-13] javax.servlet.ServletException: Could not resolve view with name 'share/service/' in servlet with name 'Spring Surf Dispatcher Servlet'
+2019-02-06 23:27:29,775 INFO  [org.alfresco.web.config.packaging.ModulePackageManager] [localhost-startStop-1] Found 6 module package(s)
+2019-02-06 23:27:29,791 INFO  [org.alfresco.web.config.packaging.ModulePackageManager] [localhost-startStop-1] Alfresco Share JAR Module, 1.0-SNAPSHOT, Sample Share JAR Module (to be included in the share.war) - part of AIO - SDK 3
+Alfresco Tutorials (Document Library) - Add a DocLib Action, 1.0-SNAPSHOT, Tutorial that demonstrates how to add a new document library action that is backed by a Repository action.
+Alfresco Tutorials (Surf Extension Modules) - Add a new Create menu item in DocLib, 1.0-SNAPSHOT, Tutorial that uses a Surf Extension Module to add a new menu item to the "Create..." drop-down menu in the Document Library (DocLib)
+Alfresco Tutorials (Document Library) - Add Metadata Template, 1.0-SNAPSHOT, Tutorial that demonstrates how to add a custom metadata template to the Document Library.
+Alfresco Tutorials (Surf Extension Modules) - Add Content to Surf Page, 1.0-SNAPSHOT, Tutorial that uses a Surf Extension Module to add content to a Surf Page
+customize-widget-instantiation-shareJar Share Jar Module - SDK 3, 1.0-SNAPSHOT, Share JAR Module (to be included in the share.war) - SDK 3
+
+2019-02-06 23:27:30,603 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] [localhost-startStop-1] Registered template processor freemarker for extension ftl
+2019-02-06 23:27:30,619 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] [localhost-startStop-1] Registered script processor javascript for extension js
+2019-02-06 23:27:30,619 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] [localhost-startStop-1] Registered template processor freemarker for extension ftl
+2019-02-06 23:27:30,619 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] [localhost-startStop-1] Registered script processor javascript for extension js
+2019-02-06 23:27:38,383 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [localhost-startStop-1] Registered 394 Web Scripts (+0 failed), 412 URLs
+2019-02-06 23:27:38,383 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [localhost-startStop-1] Registered 8 Package Description Documents (+0 failed) 
+2019-02-06 23:27:38,383 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [localhost-startStop-1] Registered 0 Schema Description Documents (+0 failed) 
+2019-02-06 23:27:38,492 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] [localhost-startStop-1] Initialised Surf Container Web Script Container (in 7855.6665ms)
+2019-02-06 23:27:38,508 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] [localhost-startStop-1] Registered template processor freemarker for extension ftl
+2019-02-06 23:27:38,508 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] [localhost-startStop-1] Registered script processor javascript for extension js
+2019-02-06 23:37:12,240 INFO  [org.alfresco.web.site.EditionInterceptor] [http-bio-8080-exec-11] Successfully retrieved license information from Alfresco.

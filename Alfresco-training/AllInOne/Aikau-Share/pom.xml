@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>Aikau-Share</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>Aikau-Share Share Jar Module - SDK 3</name>
+    <description>Share JAR Module (to be included in the share.war) - SDK 3</description>
+    <packaging>jar</packaging>
+
+	<parent>
+        <groupId>com.training.allinone</groupId>
+        <artifactId>AllInOne</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+	
+	<properties>
+        <!-- Defines the target WAR artifactId to run this amp, only used with the -Pamp-to-war switch
+             Allowed values: alfresco | share. In this case it's configured to use OOTB share -->
+        <app.amp.client.war.artifactId>share</app.amp.client.war.artifactId>
+
+        <!-- Defines the log level used in log4j.properties -->
+        <app.log.root.level>WARN</app.log.root.level>
+    </properties>
+
+     <dependencies>
+        <dependency>
+           <groupId>${alfresco.groupId}</groupId>
+            <artifactId>share</artifactId>
+            <classifier>classes</classifier>
+        </dependency>
+        <dependency>
+			<groupId>org.springframework.extensions.surf</groupId>
+			<artifactId>spring-surf-api</artifactId>
+			<version>5.1.e</version>
+		</dependency>
+    </dependencies>
+
+</project>
